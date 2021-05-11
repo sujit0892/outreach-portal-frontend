@@ -26,7 +26,7 @@ const Profile=(props)=>{
              (response) => {
                setInfo(response.data);
                setHasInfo(true)
-               console.log(response.data)
+               
    }, (error) => {
      console.log(error);
 
