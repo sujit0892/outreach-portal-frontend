@@ -1,0 +1,89 @@
+.bg{
+  background-color: #EEEEEE;
+  padding-top: 1rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  min-height: 91vh;
+}
+
+body{
+  background-color: #EEEEEE;
+}
+
+
+#cancel
+{
+  background-color: #777777;
+  border: 0;
+  width: 5rem;
+}
+#cancel:hover{
+  background-color: #555555;
+}
+
+#post
+{
+  margin-left: 45%;
+  background-color: #085BB5;
+  width: 5rem;
+}
+
+#post:hover{
+  background-color: #0B5ED7;
+}
+
+.profile-pic
+{
+  height: 3rem;
+  width: 3rem;
+   border-radius: 50%;
+}
+
+
+.post_pic{
+  width: 75%;
+  height: auto;
+}
+
+.post-click{
+  display:block;
+  color: black;
+  text-decoration:None;
+
+}
+.post-click:link {
+  display:block;
+  color: black;
+  text-decoration:None;
+
+}
+
+/* visited link */
+.post-click:visited {
+  display:block;
+  color: black;
+  text-decoration:None;
+
+}
+
+/* mouse over link */
+.post-click:hover {
+  display:block;
+  color: black;
+  text-decoration:None;
+
+}
+
+/* selected link */
+.post-click:active {
+  display:block;
+  color: black;
+  text-decoration:None;
+
+}
+.main-profile-pic
+{
+  height: 10rem;
+  width: 10rem;
+   border-radius: 50%;
+}

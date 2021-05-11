@@ -1,0 +1,18 @@
+.heading{
+  color:#0056b3;
+  font-size: 1.5rem;
+}
+
+.icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#search
+{
+  background-color: #085BB5;
+}
+
+#search:hover{
+  background-color: #0B5ED7;
+}
