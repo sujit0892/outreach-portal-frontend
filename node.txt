@@ -1,0 +1,81 @@
+
+> outreach_portal_frontend@0.1.0 start /home/poojan/IIIT-Bangalore/Sem2/SPE/Project/outreach-portal-frontend
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://192.168.1.201/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /home/poojan/IIIT-Bangalore/Sem2/SPE/Project/outreach-portal-frontend/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+Starting the development server...
+
+Compiled with warnings.
+
+src/Component/EditProfile.js
+  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/Profile.js
+  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+src/Component/EditProfile.js
+  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/Profile.js
+  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+src/Component/EditProfile.js
+  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/Profile.js
+  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/messages.js
+  Line 1:15:   'useEffect' is defined but never used                                                                                                        no-unused-vars
+  Line 1:25:   'useState' is defined but never used                                                                                                         no-unused-vars
+  Line 2:8:    'axios' is defined but never used                                                                                                            no-unused-vars
+  Line 3:8:    'Header' is defined but never used                                                                                                           no-unused-vars
+  Line 5:8:    'usericon' is defined but never used                                                                                                         no-unused-vars
+  Line 6:8:    'Card' is defined but never used                                                                                                             no-unused-vars
+  Line 9:9:    'Link' is defined but never used                                                                                                             no-unused-vars
+  Line 10:8:   'base_url' is defined but never used                                                                                                         no-unused-vars
+  Line 11:8:   'ReactDom' is defined but never used                                                                                                         no-unused-vars
+  Line 97:50:  Using target="_blank" without rel="noreferrer" is a security risk: see https://html.spec.whatwg.org/multipage/links.html#link-type-noopener  react/jsx-no-target-blank
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+Compiling...
+Compiled with warnings.
+
+src/Component/EditProfile.js
+  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/Profile.js
+  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+
+src/Component/messages.js
+  Line 1:15:   'useEffect' is defined but never used                                                                                                        no-unused-vars
+  Line 1:25:   'useState' is defined but never used                                                                                                         no-unused-vars
+  Line 2:8:    'axios' is defined but never used                                                                                                            no-unused-vars
+  Line 3:8:    'Header' is defined but never used                                                                                                           no-unused-vars
+  Line 5:8:    'usericon' is defined but never used                                                                                                         no-unused-vars
+  Line 6:8:    'Card' is defined but never used                                                                                                             no-unused-vars
+  Line 9:9:    'Link' is defined but never used                                                                                                             no-unused-vars
+  Line 10:8:   'base_url' is defined but never used                                                                                                         no-unused-vars
+  Line 11:8:   'ReactDom' is defined but never used                                                                                                         no-unused-vars
+  Line 97:50:  Using target="_blank" without rel="noreferrer" is a security risk: see https://html.spec.whatwg.org/multipage/links.html#link-type-noopener  react/jsx-no-target-blank
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
