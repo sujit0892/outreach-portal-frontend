@@ -3,9 +3,8 @@ import './css/login.css'
 import axios from "axios";
 import base_url from "./api"
 
-
 const Login = (props)=>{
-
+  console.log(props)
   useEffect(()=>{
 
   let id = sessionStorage.getItem("id")

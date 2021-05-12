@@ -152,7 +152,7 @@ let id = sessionStorage.getItem("id")
 
 
 
-  return(<div><Header/>
+  return(<div><Header history={props.history}/>
   <div className="bg">
     <Card className="cards">
       <Card.Body>
