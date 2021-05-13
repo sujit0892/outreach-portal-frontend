@@ -1,9 +1,13 @@
 .login-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height :102vh;
 }
 
 #login{
   width: 100%;
+  margin-top: 25px;
 }
+
