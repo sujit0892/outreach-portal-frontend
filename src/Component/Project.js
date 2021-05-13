@@ -222,7 +222,7 @@ const Project=(props)=>{
 
   }
 
-
+  console.log(projects);
 
     return (<div><Header/>
       <div className='bg'>

@@ -12,6 +12,32 @@ import ReactDom from "react-dom"
 
 
 const Messages=(props)=>{
+  let id = sessionStorage.getItem("id")
+  const [info,setInfo] = useState({})
+  const [hasInfo,setHasInfo] = useState(false)
+
+  useEffect(()=>{
+    if(!id)
+      props.history.push('/login')
+
+      axios({
+               method: 'get',
+               url: base_url+'/getRecentMsg/'+id,
+               headers: { "Content-Type": "text/plain" }
+           })
+           .then(
+             (response) => {
+               setInfo(response.data);
+               setHasInfo(true)
+
+   }, (error) => {
+     console.log(error);
+
+   }
+   );
+ },[id])
+
+ console.log(info)
     return (<div>
         <div class="container">
     <h3 class=" text-center">Messaging</h3>
@@ -35,9 +61,8 @@ const Messages=(props)=>{
               <div class="chat_people">
                 <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"/> </div>
                 <div class="chat_ib">
-                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                  <p>Test, which is a new approach to have all solutions 
-                    astrology under one roof.</p>
+                  <h5>{info.name} <span class="chat_date">Dec 25</span></h5>
+                  <p>{info.param}</p>
                 </div>
               </div>
             </div>
