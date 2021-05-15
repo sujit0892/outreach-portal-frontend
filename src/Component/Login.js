@@ -44,7 +44,8 @@ const Login = (props)=>{
   }
 
 
-
+  console.log(base_url);
+  console.log(id);
 
   const login=(event)=>{
     setbtn(false)
