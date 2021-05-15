@@ -4,5 +4,7 @@ COPY . ./
 
 WORKDIR ./
 
+EXPOSE 3080
+
 CMD [ "npm" , "start" ]
 
