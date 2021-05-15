@@ -91,13 +91,13 @@ const Login = (props)=>{
                 placeholder="Password"
                 onChange={passordChange}
             />
-         </div>   
+         </div>
          <div>
             <Button color="secondary" id ='login' type="button" onClick={login}>Submit</Button>{' '}
          </div>
           { lgfailed && <span>
           Invalid credentials! Try again.
-          </span>}    
+          </span>}
         </CardBody>
       </Card>
    </div>
