@@ -51,13 +51,17 @@ const Profile=(props)=>{
     props.history.push('/editProfile')
   }
 
+  const message=()=>{
+    props.history.push({pathname: '/message', state: key })
+  }
+
   return <div><Header history={props.history} />
   <div className="bg">
   <Card>
   <Card.Body>
   <Card.Text style={{textAlign:"center"}}><img alt="profile_pic" src={info.profile_pic} className='main-profile-pic'/></Card.Text>
   <Card.Title style={{textAlign:"center"}}>{info.name}</Card.Title>
-  <Card.Text style={{textAlign:"center"}}>{!key || key==id?<Button onClick={editProfile}>Edit Profile</Button>:<Button>Message</Button>}</Card.Text>
+  <Card.Text style={{textAlign:"center"}}>{!key || key==id?<Button onClick={editProfile}>Edit Profile</Button>:<Button onClick={message}>Message</Button>}</Card.Text>
   <div style={{justifyContent:"center",display:"flex"}}>
   <table style={{alignSelf:"center"}}>
   {!info.role && <tr><td>Program &nbsp;:&nbsp;</td><td>{info.program}</td></tr>}

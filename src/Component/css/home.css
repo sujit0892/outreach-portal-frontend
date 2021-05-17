@@ -37,6 +37,7 @@ body{
   height: 3rem;
   width: 3rem;
    border-radius: 50%;
+   max-width: 100%;
 }
 
 
@@ -86,4 +87,8 @@ body{
   height: 10rem;
   width: 10rem;
    border-radius: 50%;
+}
+
+.button_container{
+  width: 100%;
 }

@@ -8,7 +8,10 @@ import Project from './Component/Project'
 import Notification from './Component/Notification'
 import Profile from './Component/Profile'
 import EditProfile from './Component/EditProfile'
+import Messages from './Component/message'
 import Search from './Component/Search'
+import Group from './Component/Group'
+
 
 
 
@@ -27,6 +30,9 @@ function App() {
                   <Route exact path='/editprofile' component={EditProfile}></Route>
                   <Route exact path='/search' component={Search}></Route>
                   <Route exact path='/course/:id' component={Course}></Route>
+                  <Route exact path='/message' component={Messages}></Route>
+                  <Route exact path='/group/:id' component={Group}></Route>
+
         </Switch>
       </Router>
 

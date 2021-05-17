@@ -83,7 +83,7 @@ const searchChange = (e)=>{
         <FormControl type="text" placeholder="Search" value={searchText} onChange={searchChange} className="mr-sm-2" />&nbsp;&nbsp;&nbsp;&nbsp;
         <Button  id="search" onClick={search} disabled={searchBtn}>Search</Button>
             <Nav.Link href="/home"><img src={home} className='icon' alt="home"></img></Nav.Link>
-            <Nav.Link href="#features"><img src={message} alt="message" className='icon'></img></Nav.Link>
+            <Nav.Link href="/message"><img src={message} alt="message" className='icon'></img></Nav.Link>
             <Nav.Link href="/project"><img src={project} className='icon' alt="project"></img></Nav.Link>
               <Nav.Link href="/profile"><img src={profile} className='icon' alt="profile"></img></Nav.Link>
                 <Nav.Link href="/notification"><img src={notStat?notification_1:notification} className='icon' alt="notification"></img></Nav.Link>
