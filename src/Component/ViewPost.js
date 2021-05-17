@@ -9,13 +9,12 @@ import Button from 'react-bootstrap/Button'
 
 const ViewPost = (props)=>{
 
-  let post_id = ""
+
   let id = sessionStorage.getItem("id")
-  try{
-      post_id = props.location.state
-  }catch{
-    props.history.push("/home")
-  }
+  let  post_id = props.location.state
+
+
+
 
   const [comment,setComment] = useState("")
   const [post,setPost] = useState({})
@@ -29,7 +28,7 @@ const ViewPost = (props)=>{
       props.history.push('/login')
     if(!post_id)
       props.history.push("/home")
-
+    else{
       axios({
         method: 'post',
         url: base_url+'/viewPost',
@@ -53,8 +52,8 @@ axios.get(base_url+'/getComment/'+post_id.post_id)
       sethasComment(true);
 
     });
-
-},[post_id,id,props,sethasPost])
+}
+},[id,props,sethasPost,post_id])
 
 
 const commentChange=(e)=>{
@@ -82,7 +81,7 @@ console.log(error);
 
 
 
-  return (<div><Header/><div className="bg">
+  return (<div><Header history={props.history}/><div className="bg">
   {hasPost?<Post username={post.user.name} profile_pic={post.user.profile_pic} post={post.post} pic={post.pic}/>:""}
 <Card>
   <Card.Body>

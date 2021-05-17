@@ -2,7 +2,9 @@ import React,{useState,useEffect} from 'react'
 import './css/login.css'
 import axios from "axios";
 import base_url from "./api"
-
+import { Button, Input, CardBody} from 'reactstrap';
+import { Card, CardImg} from 'reactstrap';
+import img from './outreach.jpg';
 
 const Login = (props)=>{
 
@@ -43,9 +45,6 @@ const Login = (props)=>{
 
   }
 
-
-
-
   const login=(event)=>{
     setbtn(false)
     axios({
@@ -70,28 +69,40 @@ const Login = (props)=>{
 
 
 
-  return(<div className="login-wrapper">
-      <h1>Please Log In</h1>
-      <form>
-      { lgfailed && <span>
-    Login failed! wrong username and password
-  </span>  }
-
-        <label>
-          <p>Username</p>
-          <input id='username' type="text" value={username} onChange={usernameChange}/>
-        </label>
-        <label>
-          <p>Password</p>
-          <input id="password" type="password" value={password} onChange={passordChange} />
-        </label>
-        <div>
-          <br></br>
-          <button id ='login' type="button" onClick={login} disabled={!btn}>Login</button>
-        </div>
-      </form>
-    </div>);
-}
+  return(
+   <div className="login-wrapper">
+    <Card>
+      <CardImg top width="70%" src={img} height="60%" alt="outreach" />
+        <CardBody>
+         <div>
+           <Input
+                type="text"
+                value={username}
+                id="username"
+                placeholder="Username"
+                onChange={usernameChange}
+            />
+         </div>
+         <div>
+           <Input
+                type="password"
+                value={password}
+                id="password"
+                placeholder="Password"
+                onChange={passordChange}
+            />
+         </div>
+         <div>
+            <Button color="secondary" id ='login' type="button" onClick={login}>Submit</Button>{' '}
+         </div>
+          { lgfailed && <span>
+          Invalid credentials! Try again.
+          </span>}
+        </CardBody>
+      </Card>
+   </div>
+  );
+};
 
 
 export default Login;

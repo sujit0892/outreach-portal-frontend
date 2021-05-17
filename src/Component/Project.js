@@ -222,9 +222,9 @@ const Project=(props)=>{
 
   }
 
-  console.log(projects);
 
-    return (<div><Header/>
+
+    return (<div><Header history={props.history}/>
       <div className='bg'>
       {role && <Card className="cards">
         <Card.Body>

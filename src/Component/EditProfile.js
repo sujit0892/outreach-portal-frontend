@@ -13,7 +13,7 @@ import {storage} from './firebase/firebase'
 const EditProfile=(props)=>{
   let id = sessionStorage.getItem("id")
   const [info,setInfo] = useState({})
-  const [hasInfo,setHasInfo] = useState(false)
+  
 
   useEffect(()=>{
     if(!id)
@@ -29,7 +29,7 @@ const EditProfile=(props)=>{
            .then(
              (response) => {
                setInfo(response.data);
-               setHasInfo(true)
+
 
    }, (error) => {
      console.log(error);
@@ -215,7 +215,7 @@ console.log(error);
 }
 
 
-  return <div><Header/>
+  return <div><Header  history={props.history}/>
   <div className="bg">
   <Card>
   <Card.Body>

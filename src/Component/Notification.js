@@ -57,7 +57,7 @@ const Notification = (props)=>{
 
 
 
-  return <div><Header/>
+  return <div><Header history={props.history}/>
 <div className='bg'>
 {hasNotification && notifcations.map((data)=>{
   return <div key={data.id}><Link to={{ pathname: '/viewPost', state: { post_id: data.pid} }}  className="post-click">

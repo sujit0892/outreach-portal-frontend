@@ -10,71 +10,38 @@ Starting the development server...
 
 Compiled with warnings.
 
-src/Component/EditProfile.js
-  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+src/Component/Course.js
+  Line 23:10:  'isIns' is assigned a value but never used                                                                        no-unused-vars
+  Line 43:50:  Expected '===' and instead saw '=='                                                                               eqeqeq
+  Line 67:5:   React Hook useEffect has a missing dependency: 'props.history'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/Component/Group.js
+  Line 25:5:  React Hook useEffect has missing dependencies: 'group_id', 'id', and 'props.history'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/Component/GroupMessage.js
+  Line 13:17:   'setSender' is assigned a value but never used  no-unused-vars
+  Line 83:51:   Expected '===' and instead saw '=='             eqeqeq
+  Line 92:58:   Expected '===' and instead saw '=='             eqeqeq
+  Line 179:53:  No duplicate props allowed                      react/jsx-no-duplicate-props
+  Line 209:36:  Expected '===' and instead saw '=='             eqeqeq
+
+src/Component/Login.js
+  Line 25:10:  'btn' is assigned a value but never used  no-unused-vars
 
 src/Component/Profile.js
-  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
+  Line 20:19:  Expected '===' and instead saw '=='                                                                                                                                                                                                                                                   eqeqeq
+  Line 21:13:  Assignments to the 'key' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect  react-hooks/exhaustive-deps
+  Line 64:55:  Expected '===' and instead saw '=='                                                                                                                                                                                                                                                   eqeqeq
 
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
+src/Component/SingleMessages.js
+  Line 14:17:    'setSender' is assigned a value but never used  no-unused-vars
+  Line 156:102:  Expected '!==' and instead saw '!='             eqeqeq
+  Line 156:129:  Expected '===' and instead saw '=='             eqeqeq
+  Line 173:38:   Expected '===' and instead saw '=='             eqeqeq
 
-Compiling...
-Compiled with warnings.
-
-src/Component/EditProfile.js
-  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-src/Component/Profile.js
-  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-Compiling...
-Compiled with warnings.
-
-src/Component/EditProfile.js
-  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-src/Component/Profile.js
-  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-src/Component/messages.js
-  Line 1:15:   'useEffect' is defined but never used                                                                                                        no-unused-vars
-  Line 1:25:   'useState' is defined but never used                                                                                                         no-unused-vars
-  Line 2:8:    'axios' is defined but never used                                                                                                            no-unused-vars
-  Line 3:8:    'Header' is defined but never used                                                                                                           no-unused-vars
-  Line 5:8:    'usericon' is defined but never used                                                                                                         no-unused-vars
-  Line 6:8:    'Card' is defined but never used                                                                                                             no-unused-vars
-  Line 9:9:    'Link' is defined but never used                                                                                                             no-unused-vars
-  Line 10:8:   'base_url' is defined but never used                                                                                                         no-unused-vars
-  Line 11:8:   'ReactDom' is defined but never used                                                                                                         no-unused-vars
-  Line 97:50:  Using target="_blank" without rel="noreferrer" is a security risk: see https://html.spec.whatwg.org/multipage/links.html#link-type-noopener  react/jsx-no-target-blank
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-Compiling...
-Compiled with warnings.
-
-src/Component/EditProfile.js
-  Line 16:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-src/Component/Profile.js
-  Line 12:10:  'hasInfo' is assigned a value but never used  no-unused-vars
-
-src/Component/messages.js
-  Line 1:15:   'useEffect' is defined but never used                                                                                                        no-unused-vars
-  Line 1:25:   'useState' is defined but never used                                                                                                         no-unused-vars
-  Line 2:8:    'axios' is defined but never used                                                                                                            no-unused-vars
-  Line 3:8:    'Header' is defined but never used                                                                                                           no-unused-vars
-  Line 5:8:    'usericon' is defined but never used                                                                                                         no-unused-vars
-  Line 6:8:    'Card' is defined but never used                                                                                                             no-unused-vars
-  Line 9:9:    'Link' is defined but never used                                                                                                             no-unused-vars
-  Line 10:8:   'base_url' is defined but never used                                                                                                         no-unused-vars
-  Line 11:8:   'ReactDom' is defined but never used                                                                                                         no-unused-vars
-  Line 97:50:  Using target="_blank" without rel="noreferrer" is a security risk: see https://html.spec.whatwg.org/multipage/links.html#link-type-noopener  react/jsx-no-target-blank
+src/Component/message.js
+  Line 1:25:  'useState' is defined but never used  no-unused-vars
+  Line 1:34:  'useRef' is defined but never used    no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
